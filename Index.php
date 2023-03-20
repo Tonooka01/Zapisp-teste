@@ -20,3 +20,4 @@ curl_close($ch);
 print_r($response);
 
 echo "Mensagem enviado com sucesso";
+?>
