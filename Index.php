@@ -8,6 +8,7 @@ $api = "https://zapisp.com.br/api/whatsapp/v2/52";
 $ch = curl_init();curl_setopt($ch, CURLOPT_URL, $api);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, [
     'apiToken' => $apiToken,
     'telefone' => $telefone,
     'mensagem' => $mensagem,
